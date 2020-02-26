@@ -1,0 +1,19 @@
+package teste;
+
+public class Questao1 {
+
+	public static void main(String[] args) {
+
+		int multiploDeTres = 0;
+		int multiploDeCinco = 0;
+		
+		for (int i = 1; i <= 100; i++) {
+			
+			
+			if (i % 3 == 0) {
+				System.out.println(i);
+			}
+		}
+	}
+
+}

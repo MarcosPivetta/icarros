@@ -1,0 +1,10 @@
+package teste;
+
+public class Questao3 {
+
+	public static void main(String[] args) {
+
+		String[] cars = {"11:00","13:13","10:00"};
+	}
+
+}

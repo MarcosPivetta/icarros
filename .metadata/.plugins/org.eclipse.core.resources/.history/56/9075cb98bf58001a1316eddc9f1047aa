@@ -1,0 +1,19 @@
+package teste;
+
+import java.util.Random;
+
+public class Questao2 {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		for (int stage = 1; stage <= 10; stage++) {
+			System.out.println("Stage: " + stage);
+			
+			int score = new Random().nextInt(4);
+			System.out.println("Pontuação: " + score);
+		}
+	}
+}

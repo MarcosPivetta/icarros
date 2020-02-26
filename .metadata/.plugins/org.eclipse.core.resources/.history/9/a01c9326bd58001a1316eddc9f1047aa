@@ -1,0 +1,28 @@
+package teste;
+
+public class Questao2 {
+
+	public static void main(String[] args) {
+		String pont = "---;--;-;** ";
+		String[] pontuacao = pont.split(";");
+		int pontos = 0;
+
+		for (int i = 0; i < args.length; i++) {
+			for (int j = 0; j < pontuacao.length; j++) {
+
+				if (args[i].equals(pontuacao[j])) {
+					System.out.println("fase " + (i + 1) + " = " + j);
+					pontos += j;
+
+					j = pontuacao.length;
+
+				}
+
+			}
+
+		}
+
+		System.out.println("Pontos => " + pontos);
+
+	}
+}

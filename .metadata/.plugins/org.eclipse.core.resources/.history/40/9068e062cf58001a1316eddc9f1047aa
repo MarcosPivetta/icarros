@@ -1,0 +1,23 @@
+package teste;
+
+public class Questao3 {
+
+	public static void main(String[] args) {
+
+		String[] momentos = {"11:00","13:13","10:00"};
+		
+		for (String momento : momentos) {
+			if (true) {
+				System.out.println("Apito Assustador");
+				System.out.println(momento);
+			} else {
+				
+			}
+		}
+		//AB:AB, AA:BB, AB:BA ou AA:AA.
+		
+		
+		
+	}
+
+}

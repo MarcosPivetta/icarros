@@ -1,0 +1,28 @@
+package teste;
+
+import java.util.Date;
+
+public class Questao3 {
+
+	public static void main(String[] args) {
+
+		String[] momentos = {"11:00","13:13","10:00"};
+		
+		Date data = new Date();
+		SimpleDateFormat format = new SimpleDateFormat("hh:mm");
+		
+		
+		for (String momento : momentos) {
+			
+			
+			if (true) {
+				System.out.println("Apito Assustador");
+				System.out.println(momento);
+		}
+		//AB:AB, AA:BB, AB:BA ou AA:AA.
+		
+		
+		
+	}
+
+}

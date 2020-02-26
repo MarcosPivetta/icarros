@@ -1,0 +1,23 @@
+package teste;
+
+public class Questao2 {
+
+	public static void main(String[] args) {
+		
+		for (String string : args) {
+			
+			String pontuacao = null;
+			switch (pontuacao) {
+			case "---":
+				
+				break;
+
+			default:
+				break;
+			}
+			System.out.println(string);
+		}
+		
+	}
+
+}

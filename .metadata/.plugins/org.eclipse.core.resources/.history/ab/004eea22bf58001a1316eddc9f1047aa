@@ -1,0 +1,11 @@
+package teste;
+
+public class Questao2 {
+
+	public static void main(String[] args) {
+		
+		for (int stage = 1; stage <= 10; stage++) {
+			System.out.println("Stage: " + stage);
+		}
+	}
+}
