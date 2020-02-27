@@ -2,28 +2,23 @@ package teste;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 public class Questao3 {
 
 	public static void main(String[] args) {
 
-		String[] momentos = { "11:00", "13:13", "10:00" };
+		Date date = Calendar.getInstance().getTime();
+		DateFormat dateFormat = new SimpleDateFormat("hh:mm");
+		String strDate = dateFormat.format(date);
+		String hour = strDate.replace(":", "");
 
-		DateFormat dateFormat = new SimpleDateFormat("HH:mm");
-		Date date = new Date();
-		System.out.println(dateFormat.format(date));
-
-		for (String momento : momentos) {
-
-			if (true) {
-				System.out.println("Apito Assustador");
-				System.out.println(momento);
-			}
-			// AB:AB, AA:BB, AB:BA ou AA:AA.
-
+		if (hour.matches("(\\d)(\\d)\\1\\2") || hour.matches("(\\d)\\1(\\d)\\2") || hour.matches("(\\d)(\\d)\\2\\1")) {
+			System.out.println("Apito Assustador");
+			System.out.println(strDate);
+		} else {
+			System.out.println(strDate);
 		}
-
 	}
-
 }
