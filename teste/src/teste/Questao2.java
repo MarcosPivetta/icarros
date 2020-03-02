@@ -1,7 +1,7 @@
 package teste;
 
 public class Questao2 {
-	
+
 	public int pontuacaoFinal(String[] results) {
 
 		int total = 0;

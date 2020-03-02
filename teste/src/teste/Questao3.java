@@ -9,9 +9,8 @@ public class Questao3 {
 			
 			if (hora.matches("(\\d)(\\d)\\1\\2") || hora.matches("(\\d)\\1(\\d)\\2") || hora.matches("(\\d)(\\d)\\2\\1")) {
 				return 2;
-			} else {
-				return 0;
 			}
 		}
+		return 0;
 	}
 }
