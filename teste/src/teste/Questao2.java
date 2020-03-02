@@ -1,37 +1,29 @@
 package teste;
 
-import java.util.Random;
-
 public class Questao2 {
+	
+	public int pontuacaoFinal(String[] results) {
 
-	public static void main(String[] args) {
+		int total = 0;
+
+		for (String result : results) {
 		
-		
-		int scoreFinal = 0;
-		
-		for (int stage = 1; stage <= 10; stage++) {
-			System.out.println("Stage: " + stage);
-			
-			int score = new Random().nextInt(4);
-			
-			switch (score) {
-			case 0:
-				System.out.println("Pontuação: --- ");
-				break;
-			case 1:
-				System.out.println("Pontuação: *-- ");
-				break;
-			case 2:
-				System.out.println("Pontuação: **- ");
-				break;
-			case 3:
-				System.out.println("Pontuação: *** ");
-				break;
+			if (result.equals("---")) {
+				total = total + 0;
 			}
-			
-			scoreFinal = scoreFinal + score;
+
+			if (result.equals("*--")) {
+				total = total + 1;
+			}
+
+			if (result.equals("**-")) {
+				total = total + 2;
+			}
+
+			if (result.equals("***")) {
+				total = total + 3;
+			}
 		}
-		
-		System.out.println("Pontuação Final: " + scoreFinal);
+		return total;
 	}
 }
