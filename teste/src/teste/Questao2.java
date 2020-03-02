@@ -2,25 +2,33 @@ package teste;
 
 public class Questao2 {
 
-	public int pontuacaoFinal(String[] results) {
+	public static void main(String[] args) {
+
+		String[] result = new String[] { "---", "*--", "**-", "***" };
+
+		int total = pontuacaoFinal(result);
+
+		System.out.println(total);
+	}
+
+	private static int pontuacaoFinal(String[] result) {
 
 		int total = 0;
+		for (String point : result) {
 
-		for (String result : results) {
-		
-			if (result.equals("---")) {
+			if (point.equals("---")) {
 				total = total + 0;
 			}
 
-			if (result.equals("*--")) {
+			if (point.equals("*--")) {
 				total = total + 1;
 			}
 
-			if (result.equals("**-")) {
+			if (point.equals("**-")) {
 				total = total + 2;
 			}
 
-			if (result.equals("***")) {
+			if (point.equals("***")) {
 				total = total + 3;
 			}
 		}

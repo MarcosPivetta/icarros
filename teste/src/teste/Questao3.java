@@ -2,7 +2,16 @@ package teste;
 
 public class Questao3 {
 
-	public int apitoAssustador(String[] moments) {
+	public static void main(String[] args) {
+		
+		String[] moments = { "11:00", "13:13", "10:00" };
+		
+		int retorno = apitoAssustador(moments);
+		
+		System.out.println(retorno);
+	}
+	
+	private static int apitoAssustador(String[] moments) {
 		
 		for (String moment : moments) {
 			String hora = moment.replace(":", "");

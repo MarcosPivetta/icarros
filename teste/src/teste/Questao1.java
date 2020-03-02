@@ -16,5 +16,4 @@ public class Questao1 {
 			}
 		}
 	}
-
 }
